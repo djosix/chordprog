@@ -14,11 +14,15 @@
       th.field-label comment
       td.field-input
         input(v-model='comment')
+    tr
+      td
+      td.buttons
+        button(type="button" @click='clearSelectedNotes') clear
+        .space
+        button(type="button" @click='fillChordNotes') fill
+        .space
+        button(type="button" @click='playChordNotes') play
   PianoKeys(@updateSelectedNotes='onUpdateSelectedNotes' ref='pianoKeys')
-  .buttons
-    button(type="button" @click='clearSelectedNotes') clear
-    .space
-    button(type="button" @click='fillChordNotes') fill
 </template>
 
 <script>
@@ -132,5 +136,9 @@ export default {
 .space {
   display: inline-block;
   width: 0.2em;
+}
+
+.buttons {
+  text-align: right;
 }
 </style>
