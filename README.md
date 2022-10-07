@@ -1,6 +1,6 @@
-# chordprog
+# [chordprog](https://blog.djosix.com/static/chordprog/)
 
-chord designing application
+A chord designing application.
 
 ```sh
 # setup
